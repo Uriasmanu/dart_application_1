@@ -1,16 +1,18 @@
 void main() {
   
   String fruta = "laranja";
-  double peso = 15.5;
-  bool isMadura;
+  double peso = 15.5; //kg
   String cor = "verde";
   int diasDeColida = 40;
-
-  if (diasDeColida >= 30){
-    isMadura = true;
-  }else{
-    isMadura = false;
-  }
+  bool isMadura = funcEstaMadura(diasDeColida);
 
   print(isMadura);
+}
+
+bool funcEstaMadura (int dias){
+ if (dias >= 30){
+    return true;
+  }else{
+    return false;
+  }
 }
